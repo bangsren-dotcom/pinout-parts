@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloakPrompt — Local AI Privacy & GDPR Firewall for ChatGPT, Claude & Gemini</title>
+  <meta name="description" content="Automatically redact PII, API keys, source secrets, and custom NDA terms before they hit ChatGPT, Claude, Gemini, or DeepSeek. 100% local in-browser execution with 1-click reversible placeholders.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans">
+  <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-2 text-slate-300 hover:text-white text-sm">
+        <i class="fa-solid fa-arrow-left"></i><span>All Extensions</span>
+      </a>
+      <span class="text-sm font-bold text-emerald-400"><i class="fa-solid fa-user-shield mr-1.5"></i>CloakPrompt v1.1.0</span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <span class="px-3 py-1 rounded-full text-xs font-semibold uppercase bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">100% Local Execution • Zero Telemetry</span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold mt-4 mb-4">Never Leak Secrets or NDA Data to AI Again</h1>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8">
+        CloakPrompt sits directly inside ChatGPT, Claude, Gemini, Perplexity, and DeepSeek. It automatically replaces emails, phone numbers, API keys, JWTs, IPv4 addresses, IBANs, and your custom NDA client names with reversible tokens like <code class="text-emerald-400 bg-slate-900 px-1.5 py-0.5 rounded">[EMAIL_1]</code> or <code class="text-emerald-400 bg-slate-900 px-1.5 py-0.5 rounded">[API_KEY_1]</code> before your prompt leaves the browser.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/cloakprompt/" target="_blank" class="px-6 py-3 rounded-xl bg-orange-600 hover:bg-orange-500 font-bold text-sm transition shadow-lg">
+          <i class="fa-brands fa-firefox-browser mr-2"></i>Install on Firefox Add-ons
+        </a>
+        <a href="https://github.com/bangsren-dotcom/pinout-parts/releases/download/v1.1.0/cloakprompt-v1.1.0-chrome.zip" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold text-sm transition shadow-lg">
+          <i class="fa-brands fa-chrome mr-2"></i>Download for Chrome / Edge / Brave (v1.1.0)
+        </a>
+      </div>
+      <p class="text-xs text-slate-500 mt-4">Free Trial included • Pro Unlimited: <strong>$4.99/mo</strong> or <strong>$14.99 Lifetime</strong></p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h3 class="font-bold text-emerald-400 mb-2">⚡ Real-Time Sanitization</h3>
+        <p class="text-sm text-slate-400">Intercepts paste events and prompt submissions to scrub AWS keys, Stripe keys, GitHub tokens, emails, and credit cards automatically.</p>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h3 class="font-bold text-emerald-400 mb-2">🔄 1-Click Unmasking</h3>
+        <p class="text-sm text-slate-400">When ChatGPT or Claude replies using placeholders like <code class="text-slate-200">[CLIENT_1]</code>, click "Unmask" to restore the real values locally in your DOM.</p>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+        <h3 class="font-bold text-emerald-400 mb-2">🛡️ Custom NDA Dictionary</h3>
+        <p class="text-sm text-slate-400">Add project codenames, customer names, or internal hostnames so your team stays GDPR and NDA compliant without slowing down.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
